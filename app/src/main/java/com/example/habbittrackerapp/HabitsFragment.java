@@ -75,6 +75,8 @@ public class HabitsFragment extends Fragment {
         }else if(Integer.parseInt(storedWeight)>0){
             suggestionCycling.setText("You are doing good, keep it up !!!");
             suggestionCycling.setPadding(25,0,25,10);
+        }else{
+            suggestionCycling.setText("");
         }
 
 
