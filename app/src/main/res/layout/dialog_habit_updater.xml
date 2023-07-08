@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="340dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/creamyWhite"
+        android:backgroundTint="@color/creamyWhite"
+        app:cardBackgroundColor="#f3f3f3"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/andika"
+                android:text="Update Habit"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:textColorHint="#7e7e7e"
+                app:boxStrokeColor="@color/green"
+                app:boxStrokeWidth="2dp"
+                app:counterEnabled="true"
+                app:counterMaxLength="30"
+                app:counterTextColor="@color/green"
+                app:hintTextColor="#7e7e7e">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/habitName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Habit Name"
+                    android:fontFamily="@font/andika"
+                    android:inputType="textPersonName"
+                    android:maxLength="30"
+                    android:maxLines="1"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:visibility="visible" />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:textColorHint="#7e7e7e"
+                app:boxStrokeColor="@color/green"
+                app:boxStrokeWidth="2dp"
+                app:counterEnabled="true"
+                app:counterMaxLength="60"
+                app:counterTextColor="@color/green"
+                app:hintAnimationEnabled="true"
+                app:hintTextColor="#7e7e7e">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/habitDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Habit Description"
+                    android:inputType="textPersonName"
+                    android:maxLines="2"
+                    android:fontFamily="@font/andika"
+                    android:maxLength="60"
+                    android:textColor="#000000"
+                    android:textColorHint="#7e7e7e"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:visibility="visible" />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:layout_marginBottom="20dp">
+                <Button
+                    android:id="@+id/btnCancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:backgroundTint="#FF2A2A"
+                    android:paddingVertical="15dp"
+
+                    android:text="Cancel"
+                    android:textSize="15sp"
+                    android:textColor="#FFF"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/andika"
+                    android:textAllCaps="false"
+                    app:strokeColor="#000000" />
+                <Button
+                    android:id="@+id/btnSave"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="1dp"
+                    android:layout_marginLeft="10dp"
+                    android:backgroundTint="@color/green"
+                    android:paddingVertical="15dp"
+                    android:paddingHorizontal="40dp"
+                    android:text="Save"
+                    android:textSize="15sp"
+                    android:textColor="#FFF"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/andika"
+                    android:textAllCaps="false"
+                    app:strokeColor="#000000" />
+                <ImageButton
+                    android:id="@+id/btnDelete"
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:backgroundTint="#FF2A2A"
+                    android:paddingVertical="15dp"
+                    android:background="@drawable/circle_background"
+                    android:src="@drawable/baseline_delete_24"
+                    android:textSize="15sp"
+                    android:textColor="#FFF"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/andika"
+                    android:textAllCaps="false"
+                    app:strokeColor="#000000" />
+            </LinearLayout>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
