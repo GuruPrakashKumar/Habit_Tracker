@@ -39,7 +39,7 @@ BottomNavigationView bnview;
                 return true;
             }
         });
-        bnview.setSelectedItemId(R.id.nav_profile);
+        bnview.setSelectedItemId(R.id.nav_home);
     }
     public void loadFrag(Fragment fragment,boolean flag){
         FragmentManager fm = getSupportFragmentManager();

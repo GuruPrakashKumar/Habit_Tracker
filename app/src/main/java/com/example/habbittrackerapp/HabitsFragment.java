@@ -51,7 +51,7 @@ public class HabitsFragment extends Fragment {
 
         mBarChart.clearChart();
 
-        float[] kilometers = {2.3f, 3.0f, 5.3f, 4.0f, 1.7f, 3.0f};
+        float[] kilometers = {14.3f, 28.0f, 35.3f, 28.0f, 10.7f, 21.0f};
         String[] weeks = {"Week 1", "Week 2", "Week 3", "Week 4", "Week 5", "Week 6"};
         int[] colors = {Color.parseColor("#252e34"), Color.parseColor("#ffe284"),
                 Color.parseColor("#FF2A2A"), Color.parseColor("#64b5f6"),
